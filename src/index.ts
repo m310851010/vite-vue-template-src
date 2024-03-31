@@ -1,4 +1,4 @@
-import fs from 'fs';
+import { existsSync, readFileSync } from 'fs';
 import { extname, dirname, resolve } from 'path';
 import { type PluginOption, normalizePath } from 'vite';
 const htmlVueMap = new Map<string, string>();
@@ -20,11 +20,11 @@ export default function VueTemplateSrc(): PluginOption {
 
       return html.replace(/<template\s+src="([^"]+)"\s*>/, (match, src) => {
         const htmlPath = normalizePath(resolve(dirname(filePath), src));
-        if (!fs.existsSync(htmlPath)) {
+        if (!existsSync(htmlPath)) {
           throw `file "${src}" not exists in "${filePath}"`;
         }
         htmlVueMap.set(htmlPath, filePath);
-        const htmlContent = fs.readFileSync(htmlPath, 'utf-8');
+        const htmlContent = readFileSync(htmlPath, 'utf-8');
         return `<template>${htmlContent}`;
       });
     },
