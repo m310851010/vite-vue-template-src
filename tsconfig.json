@@ -15,7 +15,6 @@
     "baseUrl": ".",
     "resolveJsonModule": true,
 	"lib": [ "ES2020","DOM","DOM.Iterable"],
-	"skipLibCheck": true,
-    "typeRoots": ["./node_modules/@types/", "./src/typings"]
+	"skipLibCheck": true
   }
 }

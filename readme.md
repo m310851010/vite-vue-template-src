@@ -57,4 +57,5 @@ The `src` attribute currently only supports static file paths and does not suppo
 
 ## License
 
-MIT
+
+[MIT](LICENSE)
