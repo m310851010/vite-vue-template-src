@@ -1,0 +1,21 @@
+{
+  "include": ["src"],
+  "exclude": ["**/*.spec.ts"],
+  "compilerOptions": {
+    "outDir": "lib",
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "declaration": true,
+    "sourceMap": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+	"lib": [ "ES2020","DOM","DOM.Iterable"],
+	"skipLibCheck": true,
+    "typeRoots": ["./node_modules/@types/", "./src/typings"]
+  }
+}

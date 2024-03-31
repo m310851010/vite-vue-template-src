@@ -1,0 +1,31 @@
+{
+  "name": "vite-vue-template-src",
+  "version": "1.0.0",
+  "description": "Let the template tag of vuejs support the src attribute, which is used to load external template files, such as <template src=\"./my-template.html\"></template>",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+	"build": "tsc"
+  },
+  "devDependencies": {
+	"@types/node": "^20.11.28",
+	"typescript": "^5.4.2",
+    "vite": "^5.0.0"
+  },
+  "files": ["lib/**/*"],
+  "keywords": [
+    "vue3 template src",
+    "import html",
+    "template src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m310851010/vite-vue-template-src.git"
+  },
+  "homepage": "https://github.com/m310851010/vite-vue-template-src#readme",
+  "author": "m310851010",
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}

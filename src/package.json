@@ -1,0 +1,46 @@
+{
+  "name": "vite-vue-template-src",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "m310851010",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+  },
+  "engines": {
+    "node": "^18.0.0 || >=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitejs/vite-plugin-vue.git",
+    "directory": "packages/plugin-vue"
+  },
+  "bugs": {
+    "url": "https://github.com/vitejs/vite-plugin-vue/issues"
+  },
+  "homepage": "https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue#readme",
+  "peerDependencies": {
+    "vite": "^5.0.0",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@jridgewell/gen-mapping": "^0.3.5",
+    "@jridgewell/trace-mapping": "^0.3.25",
+    "debug": "^4.3.4",
+    "rollup": "^4.13.0",
+    "slash": "^5.1.0",
+    "source-map-js": "^1.0.2",
+    "vite": "^5.1.6",
+    "vue": "^3.4.21"
+  }
+}
